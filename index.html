@@ -26,6 +26,13 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    .roanoke-video {
+      border-radius: 15px;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+  </style>
 </head>
 
 <body class="index-page">
@@ -276,7 +283,7 @@
 
         <div class="row gy-4 align-items-center features-item">
           <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
-            <img src="assets/img/features-1.svg" class="img-fluid" alt="">
+            <iframe class="roanoke-video" src="https://vkvideo.ru/video_ext.php?oid=-239524904&id=456239020&hash=" width="640" height="360" frameborder="0" allowfullscreen="1" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe>
           </div>
           <div class="col-md-7" data-aos="fade-up" data-aos-delay="100">
             <h3>Установите официальный драйвер Штрих-М</h3>
@@ -294,7 +301,7 @@
 
         <div class="row gy-4 align-items-center features-item">
           <div class="col-md-5 order-1 order-md-2 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
-            <img src="assets/img/features-2.svg" class="img-fluid" alt="">
+            <iframe class="roanoke-video" src="https://vkvideo.ru/video_ext.php?oid=-239524904&id=456239019&hash=" width="640" height="360" frameborder="0" allowfullscreen="1" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe>
           </div>
           <div class="col-md-7 order-2 order-md-1" data-aos="fade-up" data-aos-delay="200">
             <h3>Установите драйвер Roanoke</h3>
@@ -311,34 +318,58 @@
 
         <div class="row gy-4 align-items-center features-item">
           <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out">
-            <img src="assets/img/features-3.svg" class="img-fluid" alt="">
+            <iframe class="roanoke-video" src="https://vkvideo.ru/clip_ext.php?oid=-239524904&id=456239022&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
           </div>
           <div class="col-md-7" data-aos="fade-up">
             <h3>Настройка сетевого соединения между Касса Мой Склад и терминалом iKassa</h3>
-            <p>Для того чтобы Касса Мой Склад и терминал могли обмениватся данными, они должны быть подключены к одному и тому же роутеру (грубо говоря к одному и тому же Wi-Fi). Обычно на торговой точке это условие соблюдается автоматически, проблемы могут возникнуть в случае старых модемов Промсвязь, либо каких нибудь специфичных настроек роутера.</p>
+            <p>
+              Для того чтобы Касса Мой Склад и терминал могли обмениватся данными, они должны быть подключены к одному и тому же роутеру (грубо говоря к одному и тому же Wi-Fi). Обычно на торговой точке это условие соблюдается автоматически, проблемы могут возникнуть в случае старых модемов Промсвязь, либо каких нибудь специфичных настроек роутера.
+            </p>
+            <p>
+              На самом терминале iKassa требуется зайти в кассовое приложение, и в Настройках включить режим HTTP-сервера и SSDP-клиента. Режим HTTP-сервера необходим чтобы появилась возможность взаимодействовать с терминалом по сети. SSDP необходим для авто-определения сетевого адреса терминала другими устройствами.
+            </p>
             <ul>
               <li><i class="bi bi-check"></i> <span>Подключите комьпютер, где установлена Касса Мой Склад к интернету через кабель или Wi-Fi</span></li>
               <li><i class="bi bi-check"></i><span>Подключите терминал iKassa к Wi-Fi</span></li>
-              <li><i class="bi bi-check"></i><span>Если обладаете базовыми навыками сетевого администратора, то можете выполнить ping с одного устройства на другое чтобы убедится что сетевое соединение может быть установлено</span></li>
+              <li><i class="bi bi-check"></i><span>По желанию: если обладаете базовыми навыками сетевого администратора, то можете выполнить ping с одного устройства на другое чтобы убедится что сетевое соединение может быть установлено</span></li>
+              <li><i class="bi bi-check"></i><span>Включите режим HTTP-сервера и SSDP-клиента в настройках терминала</span></li>
             </ul>
           </div>
         </div><!-- Features Item -->
 
         <div class="row gy-4 align-items-center features-item">
           <div class="col-md-5 order-1 order-md-2 d-flex align-items-center" data-aos="zoom-out">
-            <img src="assets/img/features-4.svg" class="img-fluid" alt="">
+            <iframe class="roanoke-video" src="https://vkvideo.ru/video_ext.php?oid=-239524904&id=456239018&hash=" width="640" height="360" frameborder="0" allowfullscreen="1" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe>
           </div>
           <div class="col-md-7 order-2 order-md-1" data-aos="fade-up">
-            <h3>Quas et necessitatibus eaque impedit ipsum animi consequatur incidunt in</h3>
-            <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+            <h3>Настройка драйвера Roanoke</h3>
+            <p>
+              После установки драйвера Roanoke, на рабочем столе появится ярлык для запуска конфигуратора.
+              Основные настройки, которые требуется задать в конфигураторе - это PIN терминала iKassa и сетевой адрес терминала, как это <a href="https://smartx.imlab.by/base/introduction.html" target="_blank">указано в документации</a> по интеграции данных терминалов.
             </p>
             <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum
+              <b>PIN-код</b> терминала можно найти в бумажном договоре или вкладыше который прилагался к терминалу. Обычно это 6 цифр.
             </p>
+            <p>
+              Если ранее на терминале был включен SSDP-клиент, то при нажатии на кнопку <b>Авто-поиск</b> адрес терминала будет определен автоматически, иначе если он известен заранее, то его можно прописать вручную.
+            </p>
+            <p>
+              Не забудьте после редактирования настроек нажать на кнопку <b>Сохранить настройки</b>
+            </p>
+          </div>
+        </div><!-- Features Item -->
+
+        <div class="row gy-4 align-items-center features-item">
+          <div class="col-md-5 order-1 order-md-2 d-flex align-items-center" data-aos="zoom-out">
+            <iframe class="roanoke-video" src="https://vkvideo.ru/video_ext.php?oid=-239524904&id=456239021&hash=" width="640" height="360" frameborder="0" allowfullscreen="1" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe>
+          </div>
+          <div class="col-md-7 order-2 order-md-1" data-aos="fade-up">
+            <h3>Регистрация ККТ в Касса Мой Склад</h3>
+            <p>
+              На последнем этапе требуется зарегестрировать ККТ в самой программе Касса Мой Склад. Для этого необходимо зайти в <b>Настройки -> ККТ -> Штрих-М -> TCP/IP -> Подключить</b>
+            </p>
+            <p>На этом настройка закончена и теперь можно полноценно работать с терминалом из Касса Мой Склад.</p>
+            <p>Отключение терминала и возврат к первоначальному состоянию можно выполнить так же легко как и подключение: достаточно зайти в <b>Настройки -> ККТ -> Отключить</b>. Это может быть полезным при возникновении потенциальных проблем, и осуществленно самим кассиром на месте.</p>
           </div>
         </div><!-- Features Item -->
 
@@ -346,197 +377,14 @@
 
     </section><!-- /Features Section -->
 
-    <!-- Gallery Section -->
-    <section id="gallery" class="gallery section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Gallery</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "centeredSlides": true,
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "breakpoints": {
-                "320": {
-                  "slidesPerView": 1,
-                  "spaceBetween": 0
-                },
-                "768": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 30
-                },
-                "992": {
-                  "slidesPerView": 5,
-                  "spaceBetween": 30
-                },
-                "1200": {
-                  "slidesPerView": 7,
-                  "spaceBetween": 30
-                }
-              }
-            }
-          </script>
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery-full" href="assets/img/app-gallery/app-gallery-1.png"><img src="assets/img/app-gallery/app-gallery-1.png" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery-full" href="assets/img/app-gallery/app-gallery-2.png"><img src="assets/img/app-gallery/app-gallery-2.png" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery-full" href="assets/img/app-gallery/app-gallery-3.png"><img src="assets/img/app-gallery/app-gallery-3.png" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery-full" href="assets/img/app-gallery/app-gallery-4.png"><img src="assets/img/app-gallery/app-gallery-4.png" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery-full" href="assets/img/app-gallery/app-gallery-5.png"><img src="assets/img/app-gallery/app-gallery-5.png" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery-full" href="assets/img/app-gallery/app-gallery-6.png"><img src="assets/img/app-gallery/app-gallery-6.png" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery-full" href="assets/img/app-gallery/app-gallery-7.png"><img src="assets/img/app-gallery/app-gallery-7.png" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery-full" href="assets/img/app-gallery/app-gallery-8.png"><img src="assets/img/app-gallery/app-gallery-8.png" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery-full" href="assets/img/app-gallery/app-gallery-9.png"><img src="assets/img/app-gallery/app-gallery-9.png" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery-full" href="assets/img/app-gallery/app-gallery-10.png"><img src="assets/img/app-gallery/app-gallery-10.png" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery-full" href="assets/img/app-gallery/app-gallery-11.png"><img src="assets/img/app-gallery/app-gallery-11.png" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery-full" href="assets/img/app-gallery/app-gallery-12.png"><img src="assets/img/app-gallery/app-gallery-12.png" class="img-fluid" alt=""></a></div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-
-    </section><!-- /Gallery Section -->
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Testimonials</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              }
-            }
-          </script>
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-
-    </section><!-- /Testimonials Section -->
 
     <!-- Pricing Section -->
     <section id="pricing" class="pricing section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Pricing</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <h2>Скачать</h2>
+        <p>Драйвер разработан для реализации разных модификаций, </p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="zoom-in" data-aos-delay="100">
